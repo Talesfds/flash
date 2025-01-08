@@ -370,3 +370,9 @@ with col7:
 # Cálculo da soma final
 soma_final = (valor_abertura + valor_iso + valor_distancia + valor_potencia + valor_modificador + valor_filtro_nd)
 
+# Exibição da soma final dentro de um retângulo
+st.markdown(f"""
+<div style="padding: 10px; text-align: center; border: 2px solid #ddd; border-radius: 10px; background-color: #f9f9f9;">
+    <h3 style="color: blue;">EV Final: {soma_final}</h3>
+</div>
+""", unsafe_allow_html=True)
